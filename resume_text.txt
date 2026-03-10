@@ -1,0 +1,104 @@
+Yeswanth Chamarthy
+Tampa, FL • chamarthyyeswanth@gmail.com • LinkedIn • GitHub • (813)-593-1789
+PROFESSIONAL EXPERIENCE
+McKibbon Hospitality Tampa, FL
+Senior Business Analyst | Data Engineering & GenAI June 2024 – Present
+As a Data & AI Engineer at Mckibbon Hospitality, I built cloud-scalable ETL pipelines and deployed GenAI-driven workflows
+that accelerated insights delivery, improved data reliability, and enabled self-serve access to trusted information across the
+organization.
+ Text-to-SQL Bot for Financial Analytics (LangChain, GPT-4o-mini, AWS Bedrock (Claude 3 Haiku), DynamoDB,
+AWS Athena, AWS Lambda, SQS, Python, Boto3, Bot Framework, Azure Bot Services)
+ Built a Teams-based multimodal Text-to-SQL bot that generates Athena queries from natural language and
+returns concise business summaries.
+ Orchestrated a LangChain multi-step workflow to route tasks between models; utilized GPT-4o-mini for
+precise SQL generation and Claude 3 Haiku (Bedrock) for natural language summarization.
+ Added SQL guardrails (SELECT-only, table/column allowlist, required filters) to improve query accuracy and
+prevent expensive scans.
+ Designed an event-driven processing system using SQS and Lambda to handle high-throughput requests.
+ Implemented DynamoDB result caching to reuse query outputs for repeat questions and reduce repeated
+Athena executions.
+ Built LangChain Tool interface (MCP) to expose secure, reusable tools (Athena query execution, schema
+lookup, caching) so the bot can retrieve data through a controlled interface.
+ Impact: Observed ~18-30% cache hit rate; reduced response time for repeat queries by ~40–70%
+ RAG Knowledge Assistant for HR department (LangChain, AWS Bedrock (Nova Lite, Titan Text Embeddings),
+ChromaDB, Python, Boto3, Bot Framework, AWS Lambda, S3, GIT, Azure Bot Services, Azure App Service)
+ Built a Retrieval-Augmented Generation (RAG) assistant to answer HR policies and forms, deployed
+through a Microsoft Teams bot for self-serve access.
+ Engineered a LangChain-based ingestion pipeline utilizing recursive character text splitters for chunking
+and Titan embeddings for vectorization in ChromaDB.
+ Integrated AWS Bedrock Titan Text Embeddings v2 for retrieval and Bedrock Nova Lite.
+ Implemented LangChain’s ConversationBufferMemory to maintain context across multi-turn user
+interactions, reducing hallucinations and improving follow-up accuracy.
+ Impact: ~0.98 faithfulness score in evaluation; indexed ~7K+ chunks for HR document search.
+ Agentic RAG & Automated Document Processor (React, Typescript, LangChain, AWS Bedrock (Claude 3.5 Sonnet),
+Titan Embeddings, Python, OCR, SharePoint API)
+ Developed an Agentic RAG system to automate the lifecycle of legal Contracts, Licenses, and Permits
+reducing manual data entry , featuring a responsive React and TypeScript dashboard for real-time
+document tracking.
+ Engineered a type-safe frontend interface using TypeScript to visualize the autonomous extraction
+process, allowing users to review and validate JSON-structured data before it synchronizes with SharePoint
+Lists.
+ Engineered a fail-safe ingestion engine using a multi-modal approach (PyMuPDF , OCR) to ensure 100%
+text extraction accuracy from low-quality scans.
+ Architected an Autonomous Agent (Claude 3.5 Sonnet) for zero-shot data extraction; integrated the
+backend with the React frontend via REST APIs to deliver a seamless, end-to-end user experience.
+ Optimized retrieval using Titan Embeddings v2, achieving high-precision semantic search across a
+repository of 200 documents.
+ BI Platform Migration & Data Pipeline Modernization (Qlik Sense, Tableau, AWS Lambda, Glue, Athena, Airflow,
+Step Functions, S3, EC2, Delta Lake, REST API, Datadog)
+ Led the end-to end migration from Qlik sense to Tableau by designing and implementing AWS- native ETL
+pipelines, analytics views, and Tableau-ready data models.
+ Built 50+ Lambda functions, 20+ AWS Glue Spark ETL Jobs and 10+ Step Functions to automate data
+ingestion, transformation, and downstream refresh workflows.
+ Developed multiple REST API integrations for data collection from external/internal sources and
+standardized ingestion patterns for reliability and reusability.
+ Orchestrated pipelines and dependencies using Apache Airflow, enabling scheduled and event-based
+processing across Lambda, Glue, and API workloads. Implemented a medallion architecture on S3, created 50+ Athena views for analytical processing on Delta
+Lake, and used Athena views as Tableau sources for modeling.
+ Migrated and consolidated 1TB+ data from diverse sources into PostgreSQL, improving accessibility for
+downstream analytics and operational use cases.
+ Established monitoring and alerting using Datadog to track job health, failures, latency, and SLA adherence
+across the pipeline ecosystem.
+ Delivered 18 Tableau dashboards adopted across departments, supporting standardized reporting and
+reducing manual reporting overhead.
+ Impact: Saved $100K/year by transitioning from Qlik Sense to Tableau and reduced data load time by ~40%
+through platform modernization, improving reliability and scalability of org-wide reporting.
+University of South Florida Tampa, FL
+Research Assistant Feb 2023 – May 2024
+● Automated the report generation process within MySQL by implementing an ETL pipeline using Apache Airflow,
+resulting in increased efficiency, and saving 1.5 hours daily.
+● Tuned TSQL queries and stored procedures in MS SQL Server, resulting in 20% performance gains.
+● Formulated statistical models like multiple regression, Tobit, and logistic regression in R and Python to track
+restaurant customer tipping behaviour, resulting in a revenue increase of 60k USD.
+● Visualized Tableau dashboards to monitor student enrolment in hospitality courses.
+Tata Consultancy Services Chennai, India
+Data Engineer April 2019 – Aug 2022
+● Engineered 8+ data ETL pipelines using Lambda, Glue, EMR, and step functions to migrate/store data across
+various sources like S3, Athena, and DynamoDB.
+● Boosted app retention by 6% by developing / modifying KPIs that measure customer engagement using PowerBI to
+track user actions and usage patterns.
+● Migrated Database from Microsoft SQL Server 2005 to Microsoft SQL Server 2019 using ETL.
+● Managed tickets in Jira and made documentation with confluence for every procedure we migrated.
+● Integrated various data sources and sinks in DataStage jobs, Enhanced code to leverage PySpark's extensive data
+source support (e.g., CSV, Parquet, Avro, JDBC) for reading and writing data, leading to a 40% data integration time.
+● Accelerated query performance by 20% through strategic crafting of indexes, stored procedures in T SQL, and
+executing complex queries in MS SQL, minimizing joins and sub-queries for data retrieval and manipulation.
+● Deployed Databricks jobs using PySpark to streamline and automate the daily data transfer tasks and produce
+Quicksight reports for consumption by various stakeholders.
+● Followed Agile methodologies and visualized the team performance every month using Tableau and Excel.
+EDUCATION
+University of South Florida Tampa, FL
+Master of Science in Business Analytics and Information Systems Aug 2022 –May 2024
+GPA: 3.93
+Gitam University India
+Bachelor of Technology in Mechanical Engineering June 2015 –April 2019
+GPA: 3.81
+Skills
+● Programming Competency: Python, SQL (MS SQL, MYSQL, Postgres), R, Shell, Unix/Bash, HTML, JavaScript, Scala
+● Generative AI: AWS Bedrock, OpenAI API, LangChain, ChromaDB, RAG, Prompt Engineering, Agents (MCP), CrewAI
+● Data Engineering: AWS-(EC2, S3, Lambda, Glue, CloudFormation, Redshift, EMR, SQS, Bedrock, Step Function, IAM),
+Apache Hadoop, PySpark, Airflow, SSIS, SSRS, HDFS, Hive, Azure App Service, Azure Bot Service
+● Visualization Tools, Libraries: PowerBI, Tableau, Qlik Sense, Google Looker Studio, Microsoft Excel, GIT, Pandas,
+Scikit-Learn, Matplotlib, Seaborn, OpenCV, PowerApps, DAX
+● Methods: Data Modeling, Data Analysis, Regression Analysis, Hypothesis Testing, Deep Learning, Agile
+(Scrum/Kanban), Jira
