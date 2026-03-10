@@ -3,88 +3,527 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Yeswanth Chamarthy | Data & AI Engineer</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">My Portfolio</div>
-            <ul>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-inner">
+            <div class="nav-logo">YC</div>
+            <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav>
-    </header>
+            <a href="Yeswanth_Chamarthy (1).pdf" download class="btn-outline">Resume</a>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
 
+    <!-- Hero -->
     <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="grid-overlay"></div>
+        </div>
         <div class="hero-content">
-            <h1>Hi, I'm Yeswanth Chamarthy</h1>
-            <p>Data Engineer & AI Specialist</p>
-            <a href="#contact" class="btn">Get In Touch</a>
-            <a href="Yeswanth_Chamarthy (1).pdf" download class="btn">Download Resume</a>
-        </div>
-        <div class="hero-image">
-            <img src="https://via.placeholder.com/300" alt="Profile Picture">
-        </div>
-    </section>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Experienced Data Engineer and AI Specialist with expertise in building scalable ETL pipelines, Generative AI applications, and data analytics solutions. Passionate about leveraging technology to drive business insights, improve data reliability, and enable automation across organizations. Skilled in Python, SQL, AWS services, and modern AI frameworks.</p>
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-            <div class="skill">Python</div>
-            <div class="skill">SQL</div>
-            <div class="skill">R</div>
-            <div class="skill">AWS</div>
-            <div class="skill">LangChain</div>
-            <div class="skill">Tableau</div>
-            <div class="skill">PySpark</div>
-            <div class="skill">Generative AI</div>
-        </div>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <h3>Text-to-SQL Bot for Financial Analytics</h3>
-                <p>Built a Teams-based multimodal Text-to-SQL bot using LangChain, GPT-4o-mini, AWS Bedrock, and DynamoDB. Generates Athena queries from natural language and provides business summaries with caching for improved performance.</p>
-                <a href="#" class="btn">View Details</a>
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Available for opportunities
             </div>
-            <div class="project-card">
-                <h3>RAG Knowledge Assistant for HR</h3>
-                <p>Developed a Retrieval-Augmented Generation assistant for HR policies using LangChain, AWS Bedrock, ChromaDB, and Titan embeddings. Deployed as a Microsoft Teams bot for self-serve access with high faithfulness scores.</p>
-                <a href="#" class="btn">View Details</a>
+            <h1 class="hero-name">Yeswanth<br><span class="gradient-text">Chamarthy</span></h1>
+            <div class="hero-titles">
+                <span class="title-prefix">I build </span>
+                <span class="typed-text" id="typedText"></span>
+                <span class="cursor">|</span>
             </div>
-            <div class="project-card">
-                <h3>BI Platform Migration to Tableau</h3>
-                <p>Led migration from Qlik Sense to Tableau by designing AWS-native ETL pipelines, analytics views, and data models. Built 50+ Lambda functions and Glue jobs, resulting in significant cost savings and performance improvements.</p>
-                <a href="#" class="btn">View Details</a>
+            <p class="hero-desc">Senior Data & AI Engineer crafting scalable ETL pipelines, GenAI-driven workflows, and intelligent automation that turns raw data into business impact.</p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn-primary">View My Work</a>
+                <a href="#contact" class="btn-ghost">Get In Touch</a>
+            </div>
+            <div class="hero-socials">
+                <a href="mailto:chamarthyyeswanth@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="tel:8135931789" aria-label="Phone"><i class="fas fa-phone"></i></a>
             </div>
         </div>
+        <div class="hero-scroll">
+            <span>Scroll down</span>
+            <div class="scroll-line"></div>
+        </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <input type="text" placeholder="Name" required>
-            <input type="email" placeholder="Email" required>
-            <textarea placeholder="Message" required></textarea>
-            <button type="submit" class="btn">Send Message</button>
-        </form>
+    <!-- About -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-label">About Me</div>
+            <h2 class="section-title">Turning Data Into <span class="gradient-text">Decisions</span></h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>I'm a Data & AI Engineer based in <strong>Tampa, FL</strong>, with a passion for building cloud-scalable systems and intelligent automation. At McKibbon Hospitality, I architect GenAI-driven workflows and ETL pipelines that accelerate insights delivery and enable self-serve access to trusted data.</p>
+                    <p>With experience spanning <strong>AWS cloud infrastructure</strong>, <strong>LangChain-based AI agents</strong>, and <strong>modern BI platforms</strong>, I bridge the gap between raw data and actionable business intelligence. I hold an MS in Business Analytics from the University of South Florida (GPA: 3.93).</p>
+                    <div class="about-contacts">
+                        <span><i class="fas fa-map-marker-alt"></i> Tampa, FL</span>
+                        <span><i class="fas fa-envelope"></i> chamarthyyeswanth@gmail.com</span>
+                        <span><i class="fas fa-phone"></i> (813)-593-1789</span>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-num">5+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-num">$100K</div>
+                        <div class="stat-label">Annual Savings Delivered</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-num">50+</div>
+                        <div class="stat-label">ETL Pipelines Built</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-num">18</div>
+                        <div class="stat-label">Dashboards Delivered</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Yeswanth Chamarthy. All rights reserved.</p>
+    <!-- Experience -->
+    <section id="experience" class="section section-dark">
+        <div class="container">
+            <div class="section-label">Career</div>
+            <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="exp-header">
+                            <div>
+                                <div class="exp-company">McKibbon Hospitality</div>
+                                <div class="exp-role">Senior Business Analyst | Data Engineering & GenAI</div>
+                            </div>
+                            <div class="exp-meta">
+                                <span class="exp-date"><i class="fas fa-calendar"></i> June 2024 – Present</span>
+                                <span class="exp-loc"><i class="fas fa-map-marker-alt"></i> Tampa, FL</span>
+                                <span class="exp-badge active">Current</span>
+                            </div>
+                        </div>
+                        <p class="exp-summary">Built cloud-scalable ETL pipelines and deployed GenAI-driven workflows that accelerated insights delivery, improved data reliability, and enabled self-serve access to trusted information across the organization.</p>
+                        <div class="exp-highlights">
+                            <div class="highlight">
+                                <div class="highlight-title"><i class="fas fa-robot"></i> Text-to-SQL Bot for Financial Analytics</div>
+                                <ul>
+                                    <li>Built a Teams-based multimodal Text-to-SQL bot generating Athena queries from natural language using LangChain, GPT-4o-mini, and Claude 3 Haiku (Bedrock)</li>
+                                    <li>Designed event-driven processing with SQS + Lambda; implemented DynamoDB result caching reducing repeat query latency by <strong>40–70%</strong></li>
+                                    <li>Built LangChain MCP Tool interface exposing secure, reusable tools with <strong>18–30% cache hit rate</strong></li>
+                                </ul>
+                                <div class="tech-tags">
+                                    <span>LangChain</span><span>GPT-4o-mini</span><span>AWS Bedrock</span><span>DynamoDB</span><span>AWS Athena</span><span>Lambda</span><span>SQS</span><span>Python</span>
+                                </div>
+                            </div>
+                            <div class="highlight">
+                                <div class="highlight-title"><i class="fas fa-brain"></i> RAG Knowledge Assistant for HR</div>
+                                <ul>
+                                    <li>Built a RAG assistant for HR policies deployed as a Microsoft Teams bot for self-serve access</li>
+                                    <li>Engineered LangChain ingestion pipeline with Titan embeddings + ChromaDB; achieved <strong>~0.98 faithfulness score</strong></li>
+                                    <li>Indexed <strong>7K+ chunks</strong> with ConversationBufferMemory for accurate multi-turn interactions</li>
+                                </ul>
+                                <div class="tech-tags">
+                                    <span>AWS Bedrock</span><span>Titan Embeddings</span><span>ChromaDB</span><span>LangChain</span><span>Nova Lite</span><span>Azure Bot Services</span>
+                                </div>
+                            </div>
+                            <div class="highlight">
+                                <div class="highlight-title"><i class="fas fa-file-contract"></i> Agentic RAG & Automated Document Processor</div>
+                                <ul>
+                                    <li>Built Agentic RAG system automating lifecycle of legal Contracts, Licenses, and Permits with React/TypeScript dashboard</li>
+                                    <li>Engineered fail-safe ingestion (PyMuPDF + OCR) ensuring <strong>100% text extraction accuracy</strong> from low-quality scans</li>
+                                    <li>Architected Claude 3.5 Sonnet autonomous agent for zero-shot data extraction across 200+ documents</li>
+                                </ul>
+                                <div class="tech-tags">
+                                    <span>React</span><span>TypeScript</span><span>Claude 3.5 Sonnet</span><span>Titan Embeddings</span><span>OCR</span><span>SharePoint API</span>
+                                </div>
+                            </div>
+                            <div class="highlight">
+                                <div class="highlight-title"><i class="fas fa-chart-bar"></i> BI Platform Migration & Data Pipeline Modernization</div>
+                                <ul>
+                                    <li>Led end-to-end migration from Qlik Sense to Tableau; built <strong>50+ Lambda functions</strong>, <strong>20+ Glue Spark ETL jobs</strong>, <strong>10+ Step Functions</strong></li>
+                                    <li>Implemented medallion architecture on S3 with 50+ Athena views; migrated <strong>1TB+ data</strong> into PostgreSQL</li>
+                                    <li>Delivered <strong>18 Tableau dashboards</strong>; saved <strong>$100K/year</strong>, reduced data load time by <strong>~40%</strong></li>
+                                </ul>
+                                <div class="tech-tags">
+                                    <span>Tableau</span><span>AWS Glue</span><span>Athena</span><span>Airflow</span><span>Step Functions</span><span>Delta Lake</span><span>Datadog</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="exp-header">
+                            <div>
+                                <div class="exp-company">University of South Florida</div>
+                                <div class="exp-role">Research Assistant</div>
+                            </div>
+                            <div class="exp-meta">
+                                <span class="exp-date"><i class="fas fa-calendar"></i> Feb 2023 – May 2024</span>
+                                <span class="exp-loc"><i class="fas fa-map-marker-alt"></i> Tampa, FL</span>
+                            </div>
+                        </div>
+                        <ul class="exp-bullets">
+                            <li>Automated report generation in MySQL via Apache Airflow ETL pipeline, saving <strong>1.5 hours daily</strong></li>
+                            <li>Tuned T-SQL queries and stored procedures in MS SQL Server, achieving <strong>20% performance gains</strong></li>
+                            <li>Formulated statistical models (multiple regression, Tobit, logistic) in R and Python to track restaurant tipping behaviour, driving <strong>$60K revenue increase</strong></li>
+                            <li>Visualized Tableau dashboards monitoring student enrolment in hospitality courses</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>MySQL</span><span>Apache Airflow</span><span>T-SQL</span><span>MS SQL Server</span><span>R</span><span>Python</span><span>Tableau</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="exp-header">
+                            <div>
+                                <div class="exp-company">Tata Consultancy Services</div>
+                                <div class="exp-role">Data Engineer</div>
+                            </div>
+                            <div class="exp-meta">
+                                <span class="exp-date"><i class="fas fa-calendar"></i> April 2019 – Aug 2022</span>
+                                <span class="exp-loc"><i class="fas fa-map-marker-alt"></i> Chennai, India</span>
+                            </div>
+                        </div>
+                        <ul class="exp-bullets">
+                            <li>Engineered <strong>8+ data ETL pipelines</strong> using Lambda, Glue, EMR, and Step Functions across S3, Athena, and DynamoDB</li>
+                            <li>Boosted app retention by <strong>6%</strong> by developing KPIs in PowerBI tracking user actions and usage patterns</li>
+                            <li>Migrated database from SQL Server 2005 → 2019 using ETL; managed Jira tickets and Confluence documentation</li>
+                            <li>Enhanced PySpark pipelines (CSV, Parquet, Avro, JDBC), reducing data integration time by <strong>40%</strong></li>
+                            <li>Accelerated query performance by <strong>20%</strong> through strategic indexes and T-SQL stored procedures</li>
+                            <li>Deployed Databricks PySpark jobs for daily data transfer and Quicksight reporting</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>AWS Lambda</span><span>Glue</span><span>EMR</span><span>PySpark</span><span>Databricks</span><span>PowerBI</span><span>T-SQL</span><span>Quicksight</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-label">Portfolio</div>
+            <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+            <div class="projects-grid">
+
+                <div class="project-card featured">
+                    <div class="project-glow"></div>
+                    <div class="project-icon"><i class="fas fa-database"></i></div>
+                    <div class="project-content">
+                        <div class="project-tag">GenAI · NLP</div>
+                        <h3>Text-to-SQL Financial Analytics Bot</h3>
+                        <p>Teams-based multimodal bot that converts natural language into AWS Athena queries and returns concise business summaries. Features LangChain multi-step routing, DynamoDB caching, and SQL guardrails.</p>
+                        <div class="project-impacts">
+                            <span><i class="fas fa-bolt"></i> 40–70% faster repeat queries</span>
+                            <span><i class="fas fa-percent"></i> 18–30% cache hit rate</span>
+                        </div>
+                        <div class="tech-tags">
+                            <span>LangChain</span><span>GPT-4o-mini</span><span>AWS Bedrock</span><span>Athena</span><span>DynamoDB</span><span>SQS</span><span>Lambda</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card featured">
+                    <div class="project-glow"></div>
+                    <div class="project-icon"><i class="fas fa-comments"></i></div>
+                    <div class="project-content">
+                        <div class="project-tag">RAG · LLM</div>
+                        <h3>RAG Knowledge Assistant for HR</h3>
+                        <p>Retrieval-Augmented Generation assistant for HR policies with ConversationBufferMemory for multi-turn context. Deployed as a Microsoft Teams bot with 7K+ indexed document chunks.</p>
+                        <div class="project-impacts">
+                            <span><i class="fas fa-star"></i> 0.98 faithfulness score</span>
+                            <span><i class="fas fa-file"></i> 7K+ chunks indexed</span>
+                        </div>
+                        <div class="tech-tags">
+                            <span>AWS Bedrock</span><span>Nova Lite</span><span>Titan Embeddings</span><span>ChromaDB</span><span>LangChain</span><span>Azure Bot</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-glow"></div>
+                    <div class="project-icon"><i class="fas fa-file-alt"></i></div>
+                    <div class="project-content">
+                        <div class="project-tag">Agents · Automation</div>
+                        <h3>Agentic RAG Document Processor</h3>
+                        <p>Autonomous system for legal Contracts, Licenses & Permits lifecycle management. React/TypeScript dashboard with OCR ingestion engine and Claude 3.5 Sonnet zero-shot extraction.</p>
+                        <div class="project-impacts">
+                            <span><i class="fas fa-check"></i> 100% extraction accuracy</span>
+                            <span><i class="fas fa-layer-group"></i> 200+ documents</span>
+                        </div>
+                        <div class="tech-tags">
+                            <span>React</span><span>TypeScript</span><span>Claude 3.5 Sonnet</span><span>OCR</span><span>SharePoint</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-glow"></div>
+                    <div class="project-icon"><i class="fas fa-chart-line"></i></div>
+                    <div class="project-content">
+                        <div class="project-tag">Data Engineering · BI</div>
+                        <h3>BI Platform Migration to Tableau</h3>
+                        <p>End-to-end migration from Qlik Sense to Tableau with AWS-native ETL pipelines. Medallion architecture on S3, 1TB+ data migration, and 18 Tableau dashboards adopted org-wide.</p>
+                        <div class="project-impacts">
+                            <span><i class="fas fa-dollar-sign"></i> $100K/yr saved</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 40% faster loads</span>
+                        </div>
+                        <div class="tech-tags">
+                            <span>Tableau</span><span>AWS Glue</span><span>Airflow</span><span>Athena</span><span>Delta Lake</span><span>Datadog</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-glow"></div>
+                    <div class="project-icon"><i class="fas fa-chart-pie"></i></div>
+                    <div class="project-content">
+                        <div class="project-tag">Analytics · Statistics</div>
+                        <h3>Restaurant Tipping Behaviour Analysis</h3>
+                        <p>Statistical models using multiple regression, Tobit, and logistic regression in R and Python to track customer tipping behaviour at USF, driving actionable business recommendations.</p>
+                        <div class="project-impacts">
+                            <span><i class="fas fa-dollar-sign"></i> $60K revenue impact</span>
+                            <span><i class="fas fa-clock"></i> 1.5 hrs/day saved</span>
+                        </div>
+                        <div class="tech-tags">
+                            <span>Python</span><span>R</span><span>MySQL</span><span>Apache Airflow</span><span>Tableau</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-glow"></div>
+                    <div class="project-icon"><i class="fas fa-server"></i></div>
+                    <div class="project-content">
+                        <div class="project-tag">Data Engineering · Cloud</div>
+                        <h3>AWS ETL Pipeline Suite at TCS</h3>
+                        <p>Suite of 8+ ETL pipelines using Lambda, Glue, EMR, and Step Functions. PySpark-enhanced data integration across CSV, Parquet, Avro, and JDBC sources with Databricks automation.</p>
+                        <div class="project-impacts">
+                            <span><i class="fas fa-bolt"></i> 40% integration time cut</span>
+                            <span><i class="fas fa-user"></i> 6% retention boost</span>
+                        </div>
+                        <div class="tech-tags">
+                            <span>PySpark</span><span>Databricks</span><span>AWS Lambda</span><span>Glue</span><span>EMR</span><span>PowerBI</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section section-dark">
+        <div class="container">
+            <div class="section-label">Expertise</div>
+            <h2 class="section-title">Skills & <span class="gradient-text">Technologies</span></h2>
+            <div class="skills-container">
+
+                <div class="skill-group">
+                    <div class="skill-group-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Programming</h3>
+                    </div>
+                    <div class="skill-pills">
+                        <span>Python</span><span>SQL</span><span>R</span><span>JavaScript</span><span>TypeScript</span><span>Scala</span><span>Shell / Bash</span><span>HTML</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <div class="skill-group-header">
+                        <i class="fas fa-robot"></i>
+                        <h3>Generative AI</h3>
+                    </div>
+                    <div class="skill-pills">
+                        <span>AWS Bedrock</span><span>OpenAI API</span><span>LangChain</span><span>ChromaDB</span><span>RAG</span><span>Prompt Engineering</span><span>MCP Agents</span><span>CrewAI</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <div class="skill-group-header">
+                        <i class="fab fa-aws"></i>
+                        <h3>Data Engineering & Cloud</h3>
+                    </div>
+                    <div class="skill-pills">
+                        <span>AWS Lambda</span><span>S3</span><span>Glue</span><span>EMR</span><span>Athena</span><span>Redshift</span><span>Step Functions</span><span>SQS</span><span>EC2</span><span>CloudFormation</span><span>IAM</span><span>PySpark</span><span>Apache Airflow</span><span>Hadoop</span><span>HDFS</span><span>Hive</span><span>SSIS / SSRS</span><span>Azure App Service</span><span>Azure Bot Service</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <div class="skill-group-header">
+                        <i class="fas fa-chart-bar"></i>
+                        <h3>Visualization & BI</h3>
+                    </div>
+                    <div class="skill-pills">
+                        <span>Tableau</span><span>PowerBI</span><span>Qlik Sense</span><span>Google Looker Studio</span><span>Microsoft Excel</span><span>DAX</span><span>PowerApps</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <div class="skill-group-header">
+                        <i class="fas fa-flask"></i>
+                        <h3>Libraries & Methods</h3>
+                    </div>
+                    <div class="skill-pills">
+                        <span>Pandas</span><span>Scikit-Learn</span><span>Matplotlib</span><span>Seaborn</span><span>OpenCV</span><span>Deep Learning</span><span>Regression Analysis</span><span>Hypothesis Testing</span><span>Data Modeling</span><span>Agile / Scrum</span><span>Jira</span><span>GIT</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section">
+        <div class="container">
+            <div class="section-label">Background</div>
+            <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+            <div class="edu-grid">
+                <div class="edu-card">
+                    <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="edu-body">
+                        <div class="edu-school">University of South Florida</div>
+                        <div class="edu-degree">Master of Science in Business Analytics & Information Systems</div>
+                        <div class="edu-meta">
+                            <span><i class="fas fa-calendar"></i> Aug 2022 – May 2024</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Tampa, FL</span>
+                        </div>
+                        <div class="edu-gpa">GPA: <strong>3.93 / 4.0</strong></div>
+                    </div>
+                </div>
+                <div class="edu-card">
+                    <div class="edu-icon"><i class="fas fa-university"></i></div>
+                    <div class="edu-body">
+                        <div class="edu-school">Gitam University</div>
+                        <div class="edu-degree">Bachelor of Technology in Mechanical Engineering</div>
+                        <div class="edu-meta">
+                            <span><i class="fas fa-calendar"></i> June 2015 – April 2019</span>
+                            <span><i class="fas fa-map-marker-alt"></i> India</span>
+                        </div>
+                        <div class="edu-gpa">GPA: <strong>3.81 / 4.0</strong></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section-dark">
+        <div class="container">
+            <div class="section-label">Get In Touch</div>
+            <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <p>I'm always open to discussing new opportunities, interesting projects, or ways to collaborate. Feel free to reach out!</p>
+                    <div class="contact-items">
+                        <a href="mailto:chamarthyyeswanth@gmail.com" class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <div class="contact-label">Email</div>
+                                <div class="contact-value">chamarthyyeswanth@gmail.com</div>
+                            </div>
+                        </a>
+                        <a href="tel:8135931789" class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                            <div>
+                                <div class="contact-label">Phone</div>
+                                <div class="contact-value">(813)-593-1789</div>
+                            </div>
+                        </a>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <div class="contact-label">Location</div>
+                                <div class="contact-value">Tampa, FL</div>
+                            </div>
+                        </div>
+                        <a href="https://linkedin.com" target="_blank" class="contact-item">
+                            <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+                            <div>
+                                <div class="contact-label">LinkedIn</div>
+                                <div class="contact-value">Connect with me</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" placeholder="your@email.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Subject</label>
+                        <input type="text" placeholder="What's this about?">
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea placeholder="Your message..." rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary full-width">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-logo">YC</div>
+            <p>© 2025 Yeswanth Chamarthy. Built with passion for data & AI.</p>
+            <div class="footer-socials">
+                <a href="mailto:chamarthyyeswanth@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>
