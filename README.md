@@ -1,36 +1,45 @@
-# My Portfolio
+# Yeswanth Chamarthy — Portfolio
 
-A simple, responsive portfolio website built with HTML, CSS, and JavaScript.
+A from-scratch, single-page portfolio for a Data &amp; AI Engineer. No template, no framework, no
+build step — just hand-written HTML, CSS, and JavaScript.
 
-## Features
+## What makes it different
 
-- Responsive design
-- Smooth scrolling navigation
-- Skills and projects sections
-- Contact form
+- **Live Text-to-SQL playground** (hero) — a working, client-side miniature of the production Teams
+  bot: pick a business question, watch it generate guard-railed Athena SQL, "scan" the lake, and
+  return a result table plus a plain-English summary.
+- **Interactive case studies** — each flagship project renders an **animated architecture diagram**
+  (data packets flowing between services). Hover any node to see what it does.
+- **Data-flow visual identity** — instrument-panel palette (data-cyan / signal-green / amber),
+  `Space Grotesk` + `JetBrains Mono`, and an animated flow-field background. Deliberately *not* the
+  default purple-gradient AI-builder look.
+- **Animated stat read-out**, click-to-copy email, and a real `mailto:` contact action.
+- Respects `prefers-reduced-motion`.
+
+## Files
+
+| File | Purpose |
+|------|---------|
+| `index.html` | Markup and content |
+| `style.css`  | Design tokens + all component styles |
+| `script.js`  | SQL playground, architecture diagrams, flow-field, count-ups |
+
+## Before you publish
+
+- Replace the `TODO` placeholder **LinkedIn** and **GitHub** URLs (search the codebase for `TODO`).
+  They appear in the hero socials, the contact links, and the footer.
+- The Text-to-SQL demo data is illustrative sample data, not live production figures.
+
+## Local preview
+
+Open `index.html` in a browser. For full clipboard support, serve it locally instead of `file://`:
+
+```bash
+python -m http.server 8000   # then visit http://localhost:8000
+```
 
 ## Hosting on GitHub Pages
 
-1. Create a new repository on GitHub (e.g., `yourusername.github.io` for a personal site, or any name for a project site).
-2. Push this code to your GitHub repository:
-   ```
-   git remote add origin https://github.com/yourusername/yourrepo.git
-   git branch -M main
-   git push -u origin main
-   ```
-3. Go to your repository settings on GitHub.
-4. Scroll down to "Pages" section.
-5. Under "Source", select "Deploy from a branch".
-6. Select "main" branch and "/ (root)" folder.
-7. Click "Save".
-8. Your site will be available at `https://yourusername.github.io/yourrepo/` (or `https://yourusername.github.io` if using that repo name).
-
-## Customization
-
-- Replace placeholder content in `index.html` with your information.
-- Update `style.css` for custom styling.
-- Add your own images and projects.
-
-## Local Development
-
-Open `index.html` in your browser to view the site locally.
+1. Push to a GitHub repository.
+2. Settings → Pages → Source: "Deploy from a branch" → `main` / root.
+3. Save — the site goes live at `https://<username>.github.io/<repo>/`.
